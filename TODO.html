@@ -15,25 +15,21 @@
     </div>
     <div class="select_all">
         <div class="attic">
-            <input type="button" name="select-all.png">
+            <input type="button">
             <input name="text" placeholder="What needs to be done?" type="text">
         </div>
 
-        <div class="tasks" id="tasks">
+        <header class="tasks" id="tasks">
 
             <div class="task" id="task1">
-                <input id="Html"
-                       name="status"
-                       type="checkbox">
+                <input type="checkbox">
                 HTML
                 <!--            <img src="images/close.png" alt="close">-->
                 <input type="button" value="X" onclick="Remove()"/>
             </div>
 
             <div class="task" id="task2">
-                <input id="CSS"
-                       name="status"
-                       type="checkbox"
+                <input type="checkbox"
                        checked>
                 CSS
                 <input type="button" value="X" onclick="Remove()"/>
@@ -41,24 +37,20 @@
             </div>
 
             <div class="task" id="task3">
-                <input id="JS"
-                       name="status"
-                       type="checkbox">
+                <input type="checkbox">
                 JS
                 <input type="button" value="X" onclick="Remove()"/>
                 <!--            <img src="images/close.png" alt="close">-->
             </div>
 
             <div class="task" id="task4">
-                <input id="JS tools"
-                       name="status"
-                       type="checkbox"
+                <input type="checkbox"
                 >
                 JS tools
                 <input type="button" value="X" onclick="Remove()"/>
                 <!--            <img src="images/close.png" alt="close">-->
             </div>
-        </div>
+        </header>
         <footer>
             <span class="left"> 3 items left </span>
             <span class="mid">
@@ -77,11 +69,11 @@
     </div>
 </div>
 <!--моя попытка в удаление div по id-->
-<script>
-    function Remove() {
-        const div = document.getElementById('task1');
-        div.remove();
-    }
-</script>
+<!--<script>-->
+<!--    function Remove() {-->
+<!--        const div = document.getElementById('task1');-->
+<!--        div.remove();-->
+<!--    }-->
+<!--</script>-->
 </body>
 </html>
