@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is my HW for the course Frontend">
+    <title>todos</title>
+    <link rel="icon" href="images/vk_logo.png" type="icon/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+<body>
+<div class="main">
+    <div class="title">
+        <h1>todos</h1>
+    </div>
+    <div class="select_all">
+        <div class="attic">
+            <input type="button" name="select-all.png">
+            <input name="text" placeholder="What needs to be done?" type="text">
+        </div>
+
+        <div class="tasks" id="tasks">
+
+            <div class="task" id="task1">
+                <input id="Html"
+                       name="status"
+                       type="checkbox">
+                HTML
+                <!--            <img src="images/close.png" alt="close">-->
+                <input type="button" value="X" onclick="Remove()"/>
+            </div>
+
+            <div class="task" id="task2">
+                <input id="CSS"
+                       name="status"
+                       type="checkbox"
+                       checked>
+                CSS
+                <input type="button" value="X" onclick="Remove()"/>
+                <!--            <img src="images/close.png" alt="close">-->
+            </div>
+
+            <div class="task" id="task3">
+                <input id="JS"
+                       name="status"
+                       type="checkbox">
+                JS
+                <input type="button" value="X" onclick="Remove()"/>
+                <!--            <img src="images/close.png" alt="close">-->
+            </div>
+
+            <div class="task" id="task4">
+                <input id="JS tools"
+                       name="status"
+                       type="checkbox"
+                >
+                JS tools
+                <input type="button" value="X" onclick="Remove()"/>
+                <!--            <img src="images/close.png" alt="close">-->
+            </div>
+        </div>
+        <footer>
+            <span class="left"> 3 items left </span>
+            <span class="mid">
+                    <input type="button"
+                           name="All"
+                           value="All">
+                    <input type="button"
+                           name="Active"
+                           value="Active">
+                    <input type="button"
+                           name="Completed"
+                           value="Completed">
+            </span>
+            <span class="right"> Clear completed </span>
+        </footer>
+    </div>
+</div>
+<!--моя попытка в удаление div по id-->
+<script>
+    function Remove() {
+        const div = document.getElementById('task1');
+        div.remove();
+    }
+</script>
+</body>
+</html>

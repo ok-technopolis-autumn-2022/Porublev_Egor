@@ -1,0 +1,23 @@
+h1 {
+    width: auto;
+    color: bisque;
+}
+
+body {
+    /*background-color: #333;*/
+    /*color: whitesmoke;*/
+    background-color: whitesmoke;
+    color: #333;
+}
+/*настройки для рисунка кнопок и переключателей*/
+label {
+    width: 40px; /* Ширина рисунка */
+    height: 40px; /* Высота рисунка */
+    display: block; /* Блочный элемент */
+    position: relative; /* Относительное позиционирование */
+}
+/*настройки для кнопки удаления*/
+button[name="delete"] {
+    position: absolute;
+    background: url(images/close.png) no-repeat top right;
+}
