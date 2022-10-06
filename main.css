@@ -10,14 +10,22 @@ body {
     color: #333;
 }
 /*настройки для рисунка кнопок и переключателей*/
-label {
-    width: 40px; /* Ширина рисунка */
-    height: 40px; /* Высота рисунка */
-    display: block; /* Блочный элемент */
-    position: relative; /* Относительное позиционирование */
-}
+
 /*настройки для кнопки удаления*/
 button[name="delete"] {
     position: absolute;
     background: url(images/close.png) no-repeat top right;
+}
+.checkbox-replica{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+input[type="checkbox"]:checked +.checkbox-replica{
+    background-color: black;
+}
+input[type="checkbox"]{
+    display: none;
 }
