@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-<!--    <meta name="description" content="This is my HW for the course Frontend">-->
+    <!--    <meta name="description" content="This is my HW for the course Frontend">-->
     <meta property="og:title" content="This is my HW for the course Frontend">
     <meta property="og:description" content="Todos is a HW project for our frontend course">
     <meta property="og:image" content="images/vk_logo.png">
@@ -22,8 +22,12 @@
 
         <!--    НЕЗАВИСИМЫЙ БЛОК ВВЕСТИ ТЕКСТ ТУДУШЕК      -->
         <section class="todo-app__main-controls">
-            <input type="button">
-            <input name="text" placeholder="What needs to be done?" type="text">
+            <input type="button" title="Select all tasks">
+            <input type="text"
+                   name="todo-app__add-text"
+                   placeholder="What needs to be done?"
+                   aria-label="Task text"
+            >
         </section>
 
         <!--НЕЗАВИСИМЫЙ БЛОК ТУДУШЕК-->
@@ -35,7 +39,8 @@
                         <label>
                             <input type="checkbox"
                                    class="task-item__status"
-                                   aria-label="Completed task: HTML"/>
+                                   aria-label="Completed task: HTML"
+                            />
                             <span class="task-item__text">HTML</span>
                         </label>
                         <button class="task-item__delete">Delete task</button>
@@ -44,7 +49,7 @@
                         <input type="text"
                                class="task-item__input"
                                value="HTML"
-                               aria-label="Edit task:HTML"
+                               aria-label="Edit task: HTML"
                         />
                     </div>
                 </li>
@@ -63,8 +68,8 @@
                     <div class="task-item__edit">
                         <input type="text"
                                class="task-item__input"
-                               value="HTML"
-                               aria-label="Edit task:CSS"
+                               value="CSS"
+                               aria-label="Edit task: CSS"
                         />
                     </div>
                 </li>
@@ -83,8 +88,8 @@
                     <div class="task-item__edit">
                         <input type="text"
                                class="task-item__input"
-                               value="HTML"
-                               aria-label="Edit task:JS"
+                               value="JS"
+                               aria-label="Edit task: JS"
                         />
                     </div>
                 </li>
@@ -103,8 +108,8 @@
                     <div class="task-item__edit">
                         <input type="text"
                                class="task-item__input"
-                               value="HTML"
-                               aria-label="Edit task:JS tools"
+                               value="JS tools"
+                               aria-label="Edit task: JS tools"
                         />
                     </div>
                 </li>
