@@ -2,7 +2,9 @@ h1 {
     width: auto;
     color: bisque;
 }
-
+li.task-item{
+    list-style-type: none;
+}
 body {
     /*background-color: #333;*/
     /*color: whitesmoke;*/

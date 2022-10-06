@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-    <!--    <meta name="description" content="This is my HW for the course Frontend">-->
+    <meta name="description" content="This is my HW for the course Frontend">
     <meta property="og:title" content="This is my HW for the course Frontend">
     <meta property="og:description" content="Todos is a HW project for our frontend course">
     <meta property="og:image" content="images/vk_logo.png">
@@ -19,134 +19,160 @@
     </header>
 
     <main class="todo-app__main">
+        <fieldset>
+            <!--    НЕЗАВИСИМЫЙ БЛОК ВВЕСТИ ТЕКСТ ТУДУШЕК      -->
+            <section class="todo-app__main-controls">
+                <input type="button" title="Select all tasks">
+                <input type="text"
+                       name="todo-app__add-text"
+                       placeholder="What needs to be done?"
+                       aria-label="Task text"
+                >
+            </section>
+        </fieldset>
 
-        <!--    НЕЗАВИСИМЫЙ БЛОК ВВЕСТИ ТЕКСТ ТУДУШЕК      -->
-        <section class="todo-app__main-controls">
-            <input type="button" title="Select all tasks">
-            <input type="text"
-                   name="todo-app__add-text"
-                   placeholder="What needs to be done?"
-                   aria-label="Task text"
-            >
-        </section>
+        <fieldset>
+            <!--НЕЗАВИСИМЫЙ БЛОК ТУДУШЕК-->
+            <section class="todo-app__tasks">
 
-        <!--НЕЗАВИСИМЫЙ БЛОК ТУДУШЕК-->
-        <section class="todo-app__tasks">
+                <ul class="todo-app__tasks-list tasks">
 
-            <ul class="todo-app__tasks-list tasks">
-                <li class="todo-app__tasks-list task-item">
-                    <div class="task-item__view">
-                        <label>
-                            <input type="checkbox"
-                                   class="task-item__status"
-                                   aria-label="Completed task: HTML"
+                    <li class="todo-app__tasks-list task-item">
+                        <div class="task-item__view">
+                            <label>
+                                <input type="checkbox"
+                                       class="task-item__status"
+                                       aria-label="Completed task: HTML"
+                                />
+                                <span class="checkbox-replica"></span>
+                                <span class="task-item__text">HTML</span>
+                            </label>
+                            <button class="task-item__delete">Delete task</button>
+                        </div>
+                        <!--          СПРЯТАННЫЙ ИМПУТ          -->
+                        <div class="task-item__edit" hidden="hidden">
+                            <input type="text"
+                                   class="task-item__input"
+                                   value="HTML"
+                                   aria-label="Edit task: HTML"
                             />
-                            <span class="checkbox-replica"></span>
-                            <span class="task-item__text">HTML</span>
-                        </label>
-                        <button class="task-item__delete">Delete task</button>
-                    </div>
-                    <div class="task-item__edit">
-                        <input type="text"
-                               class="task-item__input"
-                               value="HTML"
-                               aria-label="Edit task: HTML"
-                        />
-                    </div>
-                </li>
+                        </div>
+                    </li>
 
-                <li class="todo-app__tasks-list task-item">
-                    <div class="task-item__view">
-                        <label>
-                            <input type="checkbox"
-                                   class="task-item__status"
-                                   aria-label="Completed task: CSS"
-                                   checked
+                    <li class="todo-app__tasks-list task-item">
+                        <div class="task-item__view">
+                            <label>
+                                <input type="checkbox"
+                                       class="task-item__status"
+                                       aria-label="Completed task: CSS"
+                                       checked
+                                />
+                                <span class="checkbox-replica"></span>
+                                <span class="task-item__text">CSS</span>
+                            </label>
+                            <button class="task-item__delete">Delete task</button>
+                        </div>
+                        <!--          СПРЯТАННЫЙ ИМПУТ          -->
+                        <div class="task-item__edit" hidden="hidden">
+                            <input type="text"
+                                   class="task-item__input"
+                                   value="CSS"
+                                   aria-label="Edit task: CSS"
                             />
-                            <span class="checkbox-replica"></span>
-                            <span class="task-item__text">CSS</span>
-                        </label>
-                        <button class="task-item__delete">Delete task</button>
-                    </div>
-                    <div class="task-item__edit">
-                        <input type="text"
-                               class="task-item__input"
-                               value="CSS"
-                               aria-label="Edit task: CSS"
-                        />
-                    </div>
-                </li>
+                        </div>
+                    </li>
 
-                <li class="todo-app__tasks-list task-item">
-                    <div class="task-item__view">
-                        <label>
-                            <input type="checkbox"
-                                   class="task-item__status"
-                                   aria-label="Completed task: JS"
+                    <li class="todo-app__tasks-list task-item">
+                        <div class="task-item__view">
+                            <label>
+                                <input type="checkbox"
+                                       class="task-item__status"
+                                       aria-label="Completed task: JS"
+                                />
+                                <span class="checkbox-replica"></span>
+                                <span class="task-item__text">JS</span>
+                            </label>
+                            <button class="task-item__delete">Delete task</button>
+                        </div>
+                        <!--          СПРЯТАННЫЙ ИМПУТ          -->
+                        <div class="task-item__edit" hidden="hidden">
+                            <input type="text"
+                                   class="task-item__input"
+                                   value="JS"
+                                   aria-label="Edit task: JS"
                             />
-                            <span class="checkbox-replica"></span>
-                            <span class="task-item__text">JS</span>
-                        </label>
-                        <button class="task-item__delete">Delete task</button>
-                    </div>
-                    <div class="task-item__edit">
-                        <input type="text"
-                               class="task-item__input"
-                               value="JS"
-                               aria-label="Edit task: JS"
-                        />
-                    </div>
-                </li>
+                        </div>
+                    </li>
 
-                <li class="todo-app__tasks-list task-item">
-                    <div class="task-item__view">
-                        <label>
-                            <input type="checkbox"
-                                   class="task-item__status"
-                                   aria-label="Completed task: JS tools"
+                    <li class="todo-app__tasks-list task-item">
+                        <div class="task-item__view">
+                            <label>
+                                <input type="checkbox"
+                                       class="task-item__status"
+                                       aria-label="Completed task: JS tools"
+                                />
+                                <span class="checkbox-replica"></span>
+                                <span class="task-item__text">JS tools</span>
+                            </label>
+                            <button class="task-item__delete">Delete task</button>
+                        </div>
+
+                        <!--          СПРЯТАННЫЙ ИМПУТ          -->
+                        <div class="task-item__edit" hidden="hidden">
+                            <input type="text"
+                                   class="task-item__input"
+                                   value="JS tools"
+                                   aria-label="Edit task: JS tools"
                             />
-                            <span class="checkbox-replica"></span>
-                            <span class="task-item__text">JS tools</span>
-                        </label>
-                        <button class="task-item__delete">Delete task</button>
-                    </div>
-                    <div class="task-item__edit">
-                        <input type="text"
-                               class="task-item__input"
-                               value="JS tools"
-                               aria-label="Edit task: JS tools"
-                        />
-                    </div>
-                </li>
+                        </div>
+                    </li>
 
-            </ul>
-        </section>
+                </ul>
+            </section>
+        </fieldset>
     </main>
 
     <footer class="todo-app__footer">
-        <!--НЕЗАВИСИМЫЙ БЛОК ЧИСЛА ЗАДАНИЙ -->
-        <span class="todo-app_footer active_items">
+        <fieldset>
+            <!--НЕЗАВИСИМЫЙ БЛОК ЧИСЛА ЗАДАНИЙ -->
+            <span class="todo-app_footer active_items" role="complementary" aria-label="Active items"
+                  aria-roledescription="Number of active items">
                 3 items left
             </span>
 
-        <span class="todo-app_footer buttons">
-                    <input type="button"
-                           name="All"
-                           value="All">
-                    <input type="button"
-                           name="Active"
+            <span class="todo-app_footer buttons">
+                <label>
+                    <input type="radio"
+                           id="All"
+                           name="todo-app_footer buttons"
+                           value="All"
+                           checked>
+                   <span class="footer-buttons__text">All</span>
+                </label>
+                <label>
+                    <input type="radio"
+                           id="Active"
+                           name="todo-app_footer buttons"
                            value="Active">
-                    <input type="button"
-                           name="Completed"
+                    <span class="footer-buttons__text">Active</span>
+                </label>
+                <label>
+                    <input type="radio"
+                           id="Completed"
+                           name="todo-app_footer buttons"
                            value="Completed">
-            </span>
+                    <span class="footer-buttons__text">Completed</span>
+                </label>
+                </span>
 
-        <!--  НЕЗАВИСИМЫЙ БЛОК ОЧИСТКИ-->
-        <span class="todo-app_footer clear">
+            <!--  НЕЗАВИСИМЫЙ БЛОК ОЧИСТКИ-->
+            <span class="todo-app_footer clear">
                 <input type="button"
                        name="Clear completed"
                        value="Clear completed">
             </span>
+        </fieldset>
+
     </footer>
 
 </div>
