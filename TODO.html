@@ -3,59 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is my HW for the course Frontend">
+<!--    <meta name="description" content="This is my HW for the course Frontend">-->
+    <meta property="og:title" content="This is my HW for the course Frontend">
+    <meta property="og:description" content="Todos is a HW project for our frontend course">
+    <meta property="og:image" content="images/vk_logo.png">
     <title>todos</title>
     <link rel="icon" href="images/vk_logo.png" type="icon/x-icon">
     <link rel="stylesheet" href="main.css" type="text/css">
 </head>
 <body>
-<div class="main">
-    <div class="title">
+<div class="todo_app">
+    <!--    НЕЗАВИСИМЫЙ БЛОК ХЕДЕР      -->
+    <header class="todo-app__header">
         <h1>todos</h1>
-    </div>
-    <div class="select_all">
-        <div class="attic">
+    </header>
+
+    <main class="todo-app__main">
+
+        <!--    НЕЗАВИСИМЫЙ БЛОК ВВЕСТИ ТЕКСТ ТУДУШЕК      -->
+        <section class="todo-app__main-controls">
             <input type="button">
             <input name="text" placeholder="What needs to be done?" type="text">
-        </div>
+        </section>
 
-        <header class="tasks" id="tasks">
+        <!--НЕЗАВИСИМЫЙ БЛОК ТУДУШЕК-->
+        <section class="todo-app__tasks">
 
-            <div class="task" id="task1">
-                <input type="checkbox">
-                HTML
-                <!--            <img src="images/close.png" alt="close">-->
-                <input type="button" value="X" onclick="Remove()"/>
-            </div>
+            <ul class="todo-app__tasks-list tasks">
+                <li class="todo-app__tasks-list task-item">
+                    <div class="task-item__view">
+                        <label>
+                            <input type="checkbox"
+                                   class="task-item__status"
+                                   aria-label="Completed task: HTML"/>
+                            <span class="task-item__text">HTML</span>
+                        </label>
+                        <button class="task-item__delete">Delete task</button>
+                    </div>
+                    <div class="task-item__edit">
+                        <input type="text"
+                               class="task-item__input"
+                               value="HTML"
+                               aria-label="Edit task:HTML"
+                        />
+                    </div>
+                </li>
 
-            <div class="task" id="task2">
-                <input type="checkbox"
-                       checked>
-                CSS
-                <input type="button" value="X" onclick="Remove()"/>
-                <!--            <img src="images/close.png" alt="close">-->
-            </div>
+                <li class="todo-app__tasks-list task-item">
+                    <div class="task-item__view">
+                        <label>
+                            <input type="checkbox"
+                                   class="task-item__status"
+                                   aria-label="Completed task: CSS"
+                                   checked/>
+                            <span class="task-item__text">CSS</span>
+                        </label>
+                        <button class="task-item__delete">Delete task</button>
+                    </div>
+                    <div class="task-item__edit">
+                        <input type="text"
+                               class="task-item__input"
+                               value="HTML"
+                               aria-label="Edit task:CSS"
+                        />
+                    </div>
+                </li>
 
-            <div class="task" id="task3">
-                <input type="checkbox">
-                JS
-                <input type="button" value="X" onclick="Remove()"/>
-                <!--            <img src="images/close.png" alt="close">-->
-            </div>
+                <li class="todo-app__tasks-list task-item">
+                    <div class="task-item__view">
+                        <label>
+                            <input type="checkbox"
+                                   class="task-item__status"
+                                   aria-label="Completed task: JS"
+                            />
+                            <span class="task-item__text">JS</span>
+                        </label>
+                        <button class="task-item__delete">Delete task</button>
+                    </div>
+                    <div class="task-item__edit">
+                        <input type="text"
+                               class="task-item__input"
+                               value="HTML"
+                               aria-label="Edit task:JS"
+                        />
+                    </div>
+                </li>
 
-            <div class="task" id="task4">
-                <input type="checkbox"
-                >
-                JS tools
-                <input type="button" value="X" onclick="Remove()"/>
-                <!--            <img src="images/close.png" alt="close">-->
-            </div>
-        </header>
-        <footer>
-            <span class="left">
+                <li class="todo-app__tasks-list task-item">
+                    <div class="task-item__view">
+                        <label>
+                            <input type="checkbox"
+                                   class="task-item__status"
+                                   aria-label="Completed task: JS tools"
+                            />
+                            <span class="task-item__text">JS tools</span>
+                        </label>
+                        <button class="task-item__delete">Delete task</button>
+                    </div>
+                    <div class="task-item__edit">
+                        <input type="text"
+                               class="task-item__input"
+                               value="HTML"
+                               aria-label="Edit task:JS tools"
+                        />
+                    </div>
+                </li>
+
+            </ul>
+        </section>
+    </main>
+
+    <footer class="todo-app__footer">
+        <!--НЕЗАВИСИМЫЙ БЛОК ЧИСЛА ЗАДАНИЙ -->
+        <span class="todo-app_footer active_items">
                 3 items left
             </span>
-            <span class="mid">
+
+        <span class="todo-app_footer buttons">
                     <input type="button"
                            name="All"
                            value="All">
@@ -66,20 +130,15 @@
                            name="Completed"
                            value="Completed">
             </span>
-            <span class="right">
+
+        <!--  НЕЗАВИСИМЫЙ БЛОК ОЧИСТКИ-->
+        <span class="todo-app_footer clear">
                 <input type="button"
                        name="Clear completed"
                        value="Clear completed">
             </span>
-        </footer>
-    </div>
+    </footer>
+
 </div>
-<!--моя попытка в удаление div по id-->
-<!--<script>-->
-<!--    function Remove() {-->
-<!--        const div = document.getElementById('task1');-->
-<!--        div.remove();-->
-<!--    }-->
-<!--</script>-->
 </body>
 </html>
