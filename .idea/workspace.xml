@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1babb99c-8411-401f-ae54-d48d1ab5e940" name="Changes" comment="HW1 подрезал fieldset" />
+    <list default="true" id="1babb99c-8411-401f-ae54-d48d1ab5e940" name="Changes" comment="HW1 перенес сss">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,7 +12,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="HW1" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
   </component>
@@ -39,21 +41,6 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="HTML_1S" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="HTML_1S" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -68,6 +55,7 @@
       <workItem from="1664967842385" duration="1101000" />
       <workItem from="1665076374764" duration="12515000" />
       <workItem from="1665311641708" duration="63000" />
+      <workItem from="1665313378043" duration="641000" />
     </task>
     <task id="LOCAL-00001" summary="HW1 repush">
       <created>1664793910671</created>
@@ -139,7 +127,42 @@
       <option name="project" value="LOCAL" />
       <updated>1665093485329</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="HW1 подрезал fieldset">
+      <created>1665312117812</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1665312117812</updated>
+    </task>
+    <task id="LOCAL-00012" summary="HW1 перенес сss">
+      <created>1665312257734</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1665312257734</updated>
+    </task>
+    <task id="LOCAL-00013" summary="HW1 перенес сss">
+      <created>1665312278613</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1665312278613</updated>
+    </task>
+    <task id="LOCAL-00014" summary="HW1 перенес сss">
+      <created>1665312312701</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1665312312701</updated>
+    </task>
+    <task id="LOCAL-00015" summary="HW1 перенес сss">
+      <created>1665312346077</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1665312346077</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +188,7 @@
     <MESSAGE value="HW1 сделал понял почму был переход на новую строку - лишний не своевременный css код" />
     <MESSAGE value="HW1 добавил fieldset и поменял кнопки внизу на radio и поменял имена классов. Пытался использовать методологию бэм." />
     <MESSAGE value="HW1 подрезал fieldset" />
-    <option name="LAST_COMMIT_MESSAGE" value="HW1 подрезал fieldset" />
+    <MESSAGE value="HW1 перенес сss" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW1 перенес сss" />
   </component>
 </project>
