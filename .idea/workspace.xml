@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1babb99c-8411-401f-ae54-d48d1ab5e940" name="Changes" comment="HW1 подрезал fieldset" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="HW1" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Fca7Oy8jfvqIEvG7EuHgEGo10m" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="HTML_1S" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="HTML_1S" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1babb99c-8411-401f-ae54-d48d1ab5e940" name="Changes" comment="" />
+      <created>1664793657829</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664793657829</updated>
+      <workItem from="1664793659701" duration="616000" />
+      <workItem from="1664809038032" duration="419000" />
+      <workItem from="1664809517510" duration="247000" />
+      <workItem from="1664967842385" duration="1101000" />
+      <workItem from="1665076374764" duration="12515000" />
+      <workItem from="1665311641708" duration="63000" />
+    </task>
+    <task id="LOCAL-00001" summary="HW1 repush">
+      <created>1664793910671</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664793910671</updated>
+    </task>
+    <task id="LOCAL-00002" summary="HW1 repush">
+      <created>1664793924177</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664793924177</updated>
+    </task>
+    <task id="LOCAL-00003" summary="HW1 исправления + закомитил все скрипты">
+      <created>1664809333899</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664809333899</updated>
+    </task>
+    <task id="LOCAL-00004" summary="HW1 исправления + закомитил все скрипты">
+      <created>1664809451685</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664809451685</updated>
+    </task>
+    <task id="LOCAL-00005" summary="HW1 исправления + закомитил все скрипты">
+      <created>1664809572265</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1664809572265</updated>
+    </task>
+    <task id="LOCAL-00006" summary="HW1 начал исправления + сделал все классы по уму и по красоте. Сделал мои таски списками и окружил чебокс label но текст и удаление почему то перешли на другую строку .">
+      <created>1665084275315</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665084275315</updated>
+    </task>
+    <task id="LOCAL-00007" summary="HW1 сделал accessibility.">
+      <created>1665085575826</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665085575826</updated>
+    </task>
+    <task id="LOCAL-00008" summary="HW1 сделал понял почму был переход на новую строку - лишний не своевременный css код">
+      <created>1665087616067</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1665087616067</updated>
+    </task>
+    <task id="LOCAL-00009" summary="HW1 добавил fieldset и поменял кнопки внизу на radio и поменял имена классов. Пытался использовать методологию бэм.">
+      <created>1665093167066</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1665093167066</updated>
+    </task>
+    <task id="LOCAL-00010" summary="HW1 подрезал fieldset">
+      <created>1665093485329</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1665093485329</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="HW1 repush" />
+    <MESSAGE value="HW1 исправления + закомитил все скрипты" />
+    <MESSAGE value="HW1 начал исправления + сделал все классы по уму и по красоте. Сделал мои таски списками и окружил чебокс label но текст и удаление почему то перешли на другую строку ." />
+    <MESSAGE value="HW1 сделал accessibility." />
+    <MESSAGE value="HW1 сделал понял почму был переход на новую строку - лишний не своевременный css код" />
+    <MESSAGE value="HW1 добавил fieldset и поменял кнопки внизу на radio и поменял имена классов. Пытался использовать методологию бэм." />
+    <MESSAGE value="HW1 подрезал fieldset" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW1 подрезал fieldset" />
+  </component>
+</project>
