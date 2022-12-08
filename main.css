@@ -6,34 +6,57 @@ li.task-item{
     list-style-type: none;
 }
 body {
-    /*background-color: #333;*/
-    /*color: whitesmoke;*/
-    background-color: whitesmoke;
-    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F2F2F2;
 }
-/*настройки для рисунка кнопок и переключателей*/
+.todo-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-/*настройки для кнопки удаления*/
-button[name="delete"] {
-    position: absolute;
-    background: url(images/close.png) no-repeat top right;
+.todo-app__header h1{
+    font-size: 100px;
+    height: 100px;
+    font-weight: 100;
+    letter-spacing: -2.5px;
+    color: #CCCCCC;
 }
-.checkbox-replica{
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    border: 1px black solid;
-    border-radius: 8px;
-}
-input[type="checkbox"]:checked +.checkbox-replica{
-    background-color: black;
-}
-input[type="checkbox"]{
-    display: none;
-}
-fieldset{
-    width: fit-content;
-}
-fieldset.field{
-    width: 400px;
-}
+
+.todo-app__main {
+    position: relative;
+    max-width: 562px;
+    width: 100%;
+    background-color: #ffffff;
+    display: block;
+    border: 1px solid white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    overflow: hidden; }
+
+.todo-app__tasks-list
+
+/*button[name="delete"] {*/
+/*    position: absolute;*/
+/*    background: url(images/close.png) no-repeat top right;*/
+/*}*/
+/*.checkbox-replica{*/
+/*    display: inline-block;*/
+/*    width: 15px;*/
+/*    height: 15px;*/
+/*    border: 1px black solid;*/
+/*    border-radius: 8px;*/
+/*}*/
+/*input[type="checkbox"]:checked +.checkbox-replica{*/
+/*    background-color: black;*/
+/*}*/
+/*input[type="checkbox"]{*/
+/*    display: none;*/
+/*}*/
+/*fieldset{*/
+/*    width: fit-content;*/
+/*}*/
+/*fieldset.field{*/
+/*    width: 400px;*/
+/*}*/
