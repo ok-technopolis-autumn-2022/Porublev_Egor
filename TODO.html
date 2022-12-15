@@ -22,8 +22,9 @@
         <fieldset class="field">
             <!--    НЕЗАВИСИМЫЙ БЛОК ВВЕСТИ ТЕКСТ ТУДУШЕК      -->
             <section class="todo-app__main-controls">
-                <input type="button" title="Select all tasks">
+                <input type="button" class="todo-app__select-all" title="Select all tasks">
                 <input type="text"
+                       class="todo-app__add-task-text"
                        name="todo-app__add-text"
                        placeholder="What needs to be done?"
                        aria-label="Task text"
@@ -168,12 +169,15 @@
             <!--  НЕЗАВИСИМЫЙ БЛОК ОЧИСТКИ-->
             <span class="todo-app_footer clear">
                 <input type="button"
+                       class="footer__clear-button"
                        name="Clear completed"
                        value="Clear completed">
             </span>
         </fieldset>
 
     </footer>
+    <div class="todo-app__first-bottom"></div>
+    <div class="todo-app__second-bottom"></div>
 
 </div>
 </body>
