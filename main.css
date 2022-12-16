@@ -1,68 +1,63 @@
-h1 {
-    width: auto;
-    color: bisque;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
 
-li.task-item {
-    list-style-type: none;
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #888888;
 }
 
 body {
-    display: flex;
     flex-direction: column;
+    display: flex;
+    background-color: #f2f2f2;
     align-items: center;
-    background-color: #F2F2F2;
-    color: #666666;
-    font-family: 'Roboto Light', sans-serif;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
 }
 
-.todo-app {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .todo-app__header h1 {
     font-size: 100px;
-    height: 100px;
     font-weight: 100;
+    color: #cccccc;
+    height: 110px;
     letter-spacing: -2.5px;
-    color: #CCCCCC;
 }
 
 .todo-app__main {
-    background-color: #FFFFFF;
-    flex-direction: column;
-    display: flex;
-    width: 562px;
-    min-height: 400px;
-    box-shadow: 0px 2px 4px 0px #00000033;
+    position: relative;
+    max-width: 562px;
+    min-height: 300px;
+    width: 100%;
+    background-color: #ffffff;
+    display: block;
+    border: 1px solid white;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .todo-app__main-controls {
     display: flex;
     height: 60px;
-    border-bottom: 1px solid #E6E6E6;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .todo-app__select-all {
     background-image: url("images/select-all.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 20px;
-    border: 0px #000 solid;
-    background-color: #fff;
-    width: 54px;
-    height: 40px;
-    align-self: center;
-    margin: 10px;
+    background-size: 30px;
+    background-color: #ffffff;
+    margin: 21px 15px;
+    padding: 10px 15px;
+    border: 0px #000000 solid;
+    font-size: 0;
+    cursor: pointer;
+
 }
 
-.todo-app__add-task-text {
+.todo-app__add-task-text input {
+    font-family: Roboto, sans-serif;
     height: 100%;
     width: 100%;
     margin-right: 0;
@@ -74,56 +69,142 @@ body {
     border: 0;
 }
 
-.todo-app__add-task-text::placeholder {
-    color: #CCCCCC;
+.todo-app__add-task-text input:focus {
+    outline: none;
 }
 
 .todo-app__tasks {
-    max-height: 296px;
+    max-height: 396px;
     overflow-y: auto;
 }
 
-.task-item {
+.todo-app__tasks-list {
     display: flex;
     padding: 12px 10px;
     cursor: pointer;
+    font-size: 24px;
     border-bottom: 1px solid #e6e6e6;
 }
 
-.task-item__text {
-    flex-grow: 1;
-    justify-self: start;
-    align-self: center;
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 21px;
-    text-align: left;
-    color: #666666;
-}
-
-.task-item:hover {
+.todo-app__tasks-list:hover {
     background: #FAFAFA;
 }
 
-.todo-app__first-bottom {
-    background-color: #FFFFFF;
-    width: 98%;
-    height: 5px;
-    z-index: -1;
-    box-shadow: 0px 2px 4px 0px #00000033;
+.task-item__status {
+    appearance: none;
+    align-self: center;
+    width: 40px;
+    height: 39px;
+    border: 1px solid #e6e6e6;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.task-item__status:focus,
+.task-item__status:hover {
+    border: 1px solid #60c2b1;
+}
+
+.task-item__status:checked {
+    background-image: url("images/completed.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #60c2b1;
+    background-size: 24px;
+}
+
+.task-item__text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: -0.6px;
+    color: #666666;
+    margin-left: 10px;
+    margin-right: auto;
+    align-self: center;
+}
+
+.task-item__delete {
+    background-image: url("images/close.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ffffff;
+    opacity: 0;
+    padding: 15px;
+    border: 0;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.task-item__delete:focus {
+    opacity: inherit;
+}
+
+.todo-app__tasks-list:hover > .task-item__delete {
+    opacity: inherit;
+    background-color: #fafafa;
+}
+
+.todo-app__footer {
+    height: 43px;
+    box-shadow: inset 0px 1px 0px #e6e6e6;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input[type="radio"] {
+    appearance: none;
+}
+
+input[type="radio"]:checked + .display-mode__text {
+    border: 1px solid #EBDFDF;
+}
+
+.todo-app_footer__active_items {
+    font-family: Roboto, sans-serif;
+    line-height: 21px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: -0.35px;
+    color: #888888;
+}
+
+.todo-app_footer__buttons {
+    cursor: pointer;
+    margin-left: 50px;
 
 }
 
-.todo-app__second-bottom {
-    background-color: #FFFFFF;
-    width: 96%;
-    height: 5px;
-    z-index: -2;
-    box-shadow: 0px 2px 4px 0px #00000033;
-
+.radio-filter {
+    border-radius: 8%;
+    padding: 3px 5px;
+    display: inline-block;
+    border: 1px solid #0000;;
 }
 
-.footer__clear-button{
+.footer-buttons__text {
+    font-family: Roboto, sans-serif;
+    border-radius: 15%;
+    padding: 3px 10px;
+    display: inline-block;
+    border: 1px solid #0000;
+}
+
+.radio-filter:checked + .footer-buttons__text {
+    border: 1px solid #ebdfdf;
+}
+
+.radio-filter:focus + .footer-buttons__text,
+.radio-filter:hover + .footer-buttons__text {
+    border: 1px solid #e6e6e6;
+}
+
+.footer__clear-button {
     font-family: Roboto, sans-serif;
     font-size: 14px;
     font-weight: 300;
@@ -132,4 +213,31 @@ body {
     color: #888888;;
     border: 0px #000 solid;
     background-color: #fff;
+}
+
+.todo-app_footer__clear button:hover {
+    cursor: pointer;
+    color: #000000;
+}
+
+.todo-app__second-list {
+    background-color: #ffffff;
+    max-width: 550px;
+    width: 98%;
+    height: 5px;
+    z-index: -1;
+    box-shadow: 0px 2px 4px 0px #00000033;;
+}
+
+.todo-app__third-list {
+    background-color: #ffffff;
+    max-width: 542px;
+    width: 96%;
+    height: 4px;
+    z-index: -2;
+    box-shadow: 0px 2px 4px 0px #00000033;;
+}
+
+.todo-app__add-task-text::placeholder {
+    color: #CCCCCC;
 }
